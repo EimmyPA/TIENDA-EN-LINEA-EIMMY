@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset=UTF-8">
+  <meta name="viewport" content="widt=device-width,initial-scale=1.0">
+  <title>Mi tienda Eimmy</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.csd">
+</head>
+<body>
+  <header>
+    <h1>Mi Tienda MIMI</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <section class="busqueda">
+      <input type="text" id="buscador" 
+        placeholder="buscar productos..." 
+        oninput="filtrarproductos()" />
+    </section>
+  </header>
+  <main>
+    <h2>Bienvenidos</h2>
+    <p>Loa mejores productos APPLE a un superprecio</p>
+    <section class="ofertas">
+      <h2>💯OFERTAS DEL DIA💯</h2>
+      <div class="productos">
+        <figure class="producto">
+          <img src="imagenes/iphone.webp" alt="apPle iphone" width="300px" />
+           <figcaption>
+            <h3>IPHONE 16 PRO MAX</h3>
+            <p class="descripcion">256 GB SSD</p>
+            <p class="precio-oferta"><del>$32,000.00</del> $29,999.00</p>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <button onclick="agregarAlCarrito('APPLE IPHONE',29999,' imagenes/iphone.webp ')"> agregar al carrito</button>
+            </figcaption>
+            <figure class="producto">
+            <img src="imagenes/mac.webp" alt="Macbook pro" width="300px" />
+        <figcaption>
+         <h3>APPLE Macbook pro</h3>
+         <p class="descripcion">Memoria RAM 16 GB</p>
+         <p class="precio-oferta"><del>$19,000.00</del> $14,999.00</p>
+         <p class="rating">⭐⭐⭐⭐⭐</p>
+         <button onclick="agregarAlCarrito('APPLE Macbook',14999,' imagenes/mac.webp ')"> agregar al carrito</button>
+        </figcaption>
+      <figure class="producto">
+         <img src="imagenes/cargador.webp" alt="Cargador" width="300px" />
+         <figcaption>
+         <h3>Cargador IPHONE</h3>
+         <p class="descripcion">Cargador entrada type C</p>
+         <p class="precio-oferta"><del>$1,000.00</del> $999.00</p>
+         <p class="rating">⭐⭐⭐⭐⭐</p>
+         <button onclick="agregarAlCarrito ('APPLE Cargador', 999, 'imagenes/cargador.webp')"> Agregar al carrito</button>
+      </figcaption>
+      <figure class="producto">
+        <img src="imagenes/airpods.webp" alt="Air Pods 4" width="300px" />
+      <figcaption>
+        <h3>Air Pods</h3>
+        <p class="descripcion">Airpods 4 generacion</p>
+        <p class="precio-oferta"><del>$7,000.00</del> $4,999.00</p>
+        <p class="rating">⭐⭐⭐⭐</p>
+        <button onclick="agregarAlCarrito ('Airpods4', 4999, 'imagenes/airpods.webp')"> Agregar al carrito</button>
+       </figcaption>
+<figure class="producto">
+<img src="imagenes/applewatch.webp" alt="reloj inteligente" width="300px" />
+<figcaption>
+<h3>APPLE WATCH</h3>
+<p class="descripcion">Apple wach pro </p>
+<p class="precio-oferta"><del>$15,000.00</del> $12,999.00</p>
+<p class="rating">⭐⭐⭐⭐⭐</p>
+<button onclick="agregarAlCarrito ('reloj inteligente', 12999, 'imagenes/applewatch.webp')">Agregar al carrito</button>
+</figcaption>
+</figure>
+ </div>
+</section>
+</main>
+ <footer>
+ <p>&copy; 2025 Mi Tienda Eimmy</p>
+</footer>
+<script src="JS/main.js"></script>
+</body>
+ </html>
